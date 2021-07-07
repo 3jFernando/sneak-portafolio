@@ -1,5 +1,8 @@
 import React from 'react';
 
+// componentes
+import Footer from '../Footer';
+
 // assets
 const LOGO = "/logo192.png";
 
@@ -43,6 +46,12 @@ function MenuMobil(props) {
                         ))}
                     </ul>
                 </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <Footer></Footer>
             </div>
         </div>
     )
