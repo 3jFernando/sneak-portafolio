@@ -14,6 +14,19 @@ function Search(props) {
                     <span className="fa fa-search"></span>
                 </div>
             </div>
+            <br />
+            <br />
+            <div className="FooterSearch">
+                <p>2016 - <strong>Sneak</strong> All Right Reserved</p>
+                <br />
+                <div className="FooterSocial">
+                    <span className="fa fa-facebook"></span>
+                    <span className="fa fa-twitter"></span>
+                    <span className="fa fa-globe"></span>
+                    <span className="fa fa-google-plus"></span>
+                    <span className="fa fa-youtube"></span>
+                </div>
+            </div>
         </div>
     )
 }

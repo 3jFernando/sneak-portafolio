@@ -5,6 +5,8 @@ import MenuNav from '../menus/MenuWeb'
 
 function Content(props) {
 
+    let status = 0;
+
     return (
         <div className="Content">
             <div className="ContentOrder">
@@ -14,13 +16,15 @@ function Content(props) {
             <div className="ContentTabs">
                 <MenuNav search={props.search} searchView={props.searchView} links={props.links} activeMenu={props.activeMenu} active={props.active} logo={false}></MenuNav>
             </div>
-            <div className={props.viewBy == 'GRID' ? 'ContentBody' : 'ContentBody-list'}>
-                {
-                    props.ApiItems.length > 0 ?
-                        props.ApiItems.map((item, key) => (
-                            <div className={props.viewBy == 'GRID' ? 'ContentBodyItem' : 'ContentBodyItem-list'} key={key}>
+
+            {
+                props.ApiItems.length > 0 ? (
+                    <div className={props.viewBy == 'GRID' ? `ContentBody` : 'ContentBody-list'}>
+
+                        {props.ApiItems.map((item, key) => (
+                            <div key={key} className={props.viewBy == 'GRID' ? `ContentBodyBox ${key} ContentBodyItem` : 'ContentBodyItem-list'} key={key}>
                                 <img src={item.image}></img>
-                                <div className={props.viewBy == 'GRID' ? 'ContentBodyItemBody' : 'ContentBodyItemBody-list'}>
+                                <div className={props.viewBy == 'GRID' ? 'ContentBodyBoxItem' : 'ContentBodyItemBody-list'}>
                                     <div>
                                         <strong>{item.title}</strong>
                                         <hr />
@@ -28,19 +32,22 @@ function Content(props) {
                                     </div>
                                 </div>
                             </div>
-                        )) : (
-                            <div className="ContentBodyItemNoContent">
-                                No hay resultados para mostrar...
-                            </div>
-                        )
-                }
-            </div>
-            {props.active == 1 &&
+                        ))}
+                    </div>
+                ) : (
+                    <div className="ContentBodyItemNoContent">
+                        No hay resultados para mostrar...
+                    </div>
+                )
+            }
+
+            {
+                props.active == 1 &&
                 <div className="content-btn-see-more">
                     <button>Show Me More</button>
                 </div>
             }
-        </div>
+        </div >
     )
 }
 
