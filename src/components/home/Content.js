@@ -12,7 +12,7 @@ function Content(props) {
                 <span className="material-icons" onClick={() => props.changeViewItems('LIST')}>view_agenda</span>
             </div>
             <div className="ContentTabs">
-                <MenuNav activeMenu={props.activeMenu} active={props.active} logo={false}></MenuNav>
+                <MenuNav search={props.search} searchView={props.searchView} links={props.links} activeMenu={props.activeMenu} active={props.active} logo={false}></MenuNav>
             </div>
             <div className={props.viewBy == 'GRID' ? 'ContentBody' : 'ContentBody-list'}>
                 {

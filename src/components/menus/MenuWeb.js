@@ -5,31 +5,8 @@ const LOGO = "/logo192.png";
 
 function MenuWeb(props) {
 
-    const links = [
-        {
-            id: 1,
-            title: 'All'
-        },
-        {
-            id: 2,
-            title: 'Branding'
-        },
-        {
-            id: 3,
-            title: 'Web'
-        },
-        {
-            id: 4,
-            title: 'Photography'
-        },
-        {
-            id: 5,
-            title: 'App'
-        }
-    ]
-
     return (
-        <div className="MenuWeb">
+        <div className={props.logo ? 'MenuWeb MenuWeb-top' : 'MenuWeb'}>
             {props.logo && (<div className="MenuWebLogo">
                 <img src={LOGO}></img>
                 <div className="MenuWebLogoTitle">
@@ -42,7 +19,7 @@ function MenuWeb(props) {
             <div className="MenuWebLinks">
                 <ul>
                     {
-                        links.map((link, index) => (
+                        props.links.map((link, index) => (
                             <li
                                 key={index}
                                 onClick={() => props.activeMenu(link.id)}
@@ -53,7 +30,11 @@ function MenuWeb(props) {
                         ))
                     }
                 </ul>
-                {props.logo && (<span className="fa fa-search"></span>)}
+                {props.logo && (
+                    <span
+                        className="fa fa-search"
+                        onClick={() => props.searchView(true)}
+                    ></span>)}
             </div>
         </div>
     )

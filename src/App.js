@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './App.css';
 
 // componentes
-// import MenuDrawer from './components/menus/MenuMobil'
+import Search from './components/Search'
+import MenuDrawer from './components/menus/MenuMobil'
 import MenuWeb from './components/menus/MenuWeb'
 import Header from './components/Header'
 import Content from './components/home/Content'
@@ -16,6 +17,31 @@ function App() {
   const [active, setActive] = useState(1); // menu activa 1: All, etc
   const [viewBy, setViewBy] = useState('GRID'); // grid || list
   const [items, setItems] = useState(ApiItems); // JSON -> items
+  const [stateMenuMobil, setStateMenuMobil] = useState(true); // Estado de menu movil, abierto/cerrado
+  const [search, setSearch] = useState(false); // Estado de menu movil, abierto/cerrado
+
+  const links = [
+    {
+      id: 1,
+      title: 'All'
+    },
+    {
+      id: 2,
+      title: 'Branding'
+    },
+    {
+      id: 3,
+      title: 'Web'
+    },
+    {
+      id: 4,
+      title: 'Photography'
+    },
+    {
+      id: 5,
+      title: 'App'
+    }
+  ]
 
   /**
   * Activar menu
@@ -31,7 +57,7 @@ function App() {
     })
 
     setItems(newItems);
-
+    openMenuMobil(false);
   }
 
   /**
@@ -41,11 +67,27 @@ function App() {
     setViewBy(view);
   }
 
+  /**
+   * Abrir menu movil
+   */
+  const openMenuMobil = status => {
+    setStateMenuMobil(status);
+  }
+
+  /**
+   * Abrir buscador
+   */
+  const searchView = action => {
+    setSearch(action);
+  }
+
   return (
     <div className="App">
-      <MenuWeb activeMenu={activeMenu} active={active} logo={true}></MenuWeb>
+      <Search search={search} searchView={searchView}></Search>
+      <MenuDrawer search={search} searchView={searchView} openMenuMobil={openMenuMobil} stateMenuMobil={stateMenuMobil} links={links} activeMenu={activeMenu} active={active}></MenuDrawer>
+      <MenuWeb search={search} searchView={searchView} links={links} activeMenu={activeMenu} active={active} logo={true}></MenuWeb>
       <Header></Header>
-      <Content activeMenu={activeMenu} active={active} changeViewItems={changeViewItems} viewBy={viewBy} ApiItems={items}></Content>
+      <Content search={search} searchView={searchView} links={links} activeMenu={activeMenu} active={active} changeViewItems={changeViewItems} viewBy={viewBy} ApiItems={items}></Content>
       <Footer></Footer>
     </div>
   );
