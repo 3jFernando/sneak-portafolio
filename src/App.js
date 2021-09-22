@@ -13,6 +13,7 @@ import Content from './components/home/Content'
 import Footer from './components/Footer'
 import Bussines from './components/Bussines'
 import MenuNew from './components/menus/MenuNew';
+import Contact from './components/home/Contact';
 
 // api
 const ApiItems = require('./utils/ITEMS.json');
@@ -97,6 +98,7 @@ function App() {
       <Header></Header>
       <Bussines></Bussines>
       <Content activeMenuTab={true} search={search} searchView={searchView} links={links} activeMenu={activeMenu} active={active} changeViewItems={changeViewItems} viewBy={viewBy} ApiItems={items}></Content>
+      <Contact />
       <Footer></Footer>
     </div>
   );

@@ -20,7 +20,7 @@ function MenuNew() {
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#about">
+              <a className="nav-link scrollto" href="#contact">
                 Contacto
               </a>
             </li>

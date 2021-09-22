@@ -6,7 +6,7 @@ function Packages(props) {
       title: "PÁGINA WEB",
       subtitle: "Página web contenido estadico",
       img: "/assets/img/pricing-free.png",
-      price: 750000,
+      delay: 100,
       services: [
         "Formulario de contacto",
         "1 banner",
@@ -22,7 +22,7 @@ function Packages(props) {
       title: "PÁGINA WEB PROFESIONAL",
       subtitle: "Página web contenido dínamico",
       img: "assets/img/pricing-starter.png",
-      price: 1700000,
+      delay: 200,
       services: [
         "Formulario de contacto",
         "2 banner",
@@ -41,7 +41,7 @@ function Packages(props) {
       title: "TIENDA VIRTUAL",
       subtitle: "NAVEGACIÓN PERSONALIZADA",
       img: "assets/img/pricing-business.png",
-      price: 2400000,
+      delay: 300,
       services: [
         "Formulario de contacto",
         "Diseño 100% personalizado",
@@ -60,7 +60,7 @@ function Packages(props) {
       title: "FACTURACION ELECTRONICA",
       subtitle: "NAVEGACIÓN PERSONALIZADA",
       img: "assets/img/pricing-ultimate.png",
-      price: 2400000,
+      delay: 400,
       services: [
         "Formulario de contacto",
         "Diseño 100% personalizado",
@@ -88,7 +88,7 @@ function Packages(props) {
             <div
               className="col-lg-3 col-md-6 "
               data-aos="zoom-in"
-              data-aos-delay={100}
+              data-aos-delay={item.delay}
               key={index}
             >
               <div className="box">
