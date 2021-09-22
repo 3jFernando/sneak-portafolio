@@ -2,7 +2,7 @@ import React from 'react';
 
 function Clients(props) {
     return (
-        <div className="Clients body-space">
+        <div id="clients" className="Clients body-space">
             <h2>NUESTROS CLIENTES</h2>
             <br />
             <div className="ClientsContent">

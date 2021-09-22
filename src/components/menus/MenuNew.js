@@ -15,7 +15,7 @@ function MenuNew() {
         <nav id="navbar" className="navbar">
           <ul>
             <li>
-              <a className="nav-link scrollto active" href="#hero">
+              <a className="nav-link scrollto active" href="#bussines">
                 Valores
               </a>
             </li>
@@ -25,17 +25,17 @@ function MenuNew() {
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#services">
+              <a className="nav-link scrollto" href="#portfolio">
                 Portafolio
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#portfolio">
+              <a className="nav-link scrollto" href="#services">
                 servicios
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#team">
+              <a className="nav-link scrollto" href="#clients">
                 Clientes
               </a>
             </li>

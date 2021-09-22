@@ -35,7 +35,7 @@ function Content(props) {
                 </div>
             </div>
 
-            <div className="body-space">
+            <div className="body-space" id="portfolio">
                 <h2>NUESTRO PORFTAFOLIO</h2>
                 <br />
 
