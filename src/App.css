@@ -1037,3 +1037,61 @@ body {
       width: 100%;
     }
   }
+
+/*--------------------------------------------------------------
+# Bussines
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-header {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .section-header h2 {
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--bs-body-color);
+    text-transform: uppercase;
+  }
+  .section-header p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #2a95e9;
+  }
+  @media (max-width: 768px) {
+    .section-header p {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+.bussines .box {
+    padding: 30px;
+    box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+    text-align: center;
+    transition: 0.3s;
+    height: 100%;
+  }
+  .bussines .box img {
+    padding: 30px 50px;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+  .bussines .box h3 {
+    font-size: 24px;
+    color: #2a95e9;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  .bussines .box:hover {
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  }
+  .bussines .box:hover img {
+    transform: scale(1);
+  }

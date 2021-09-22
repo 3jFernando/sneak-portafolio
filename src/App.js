@@ -11,6 +11,7 @@ import MenuWeb from './components/menus/MenuWeb'
 import Header from './components/Header'
 import Content from './components/home/Content'
 import Footer from './components/Footer'
+import Bussines from './components/Bussines'
 
 // api
 const ApiItems = require('./utils/ITEMS.json');
@@ -92,6 +93,7 @@ function App() {
       {/*<MenuDrawer search={search} searchView={searchView} openMenuMobil={openMenuMobil} stateMenuMobil={stateMenuMobil} links={links} activeMenu={activeMenu} active={active}></MenuDrawer>*/}
       <MenuWeb search={search} searchView={searchView} links={links} activeMenu={activeMenu} active={active} logo={true} activeMenuTab={false}></MenuWeb>
       <Header></Header>
+      <Bussines></Bussines>
       <Content activeMenuTab={true} search={search} searchView={searchView} links={links} activeMenu={activeMenu} active={active} changeViewItems={changeViewItems} viewBy={viewBy} ApiItems={items}></Content>
       <Footer></Footer>
     </div>
