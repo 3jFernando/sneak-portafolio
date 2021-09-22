@@ -19,7 +19,7 @@ body {
     position: fixed;
     top: -1000px;
     height: 100vh;
-    background: #ed5361;
+    background: #4bb8d4;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -92,7 +92,7 @@ body {
 .SearchChildClose span {
     font-size: 40px;
     border: 2px solid white;
-    background: rgb(239 83 97);
+    background: #4bb8d4;
     padding: 25px;
     border-radius: 50%;
     color: white;
@@ -101,7 +101,7 @@ body {
 
 .SearchChildClose span:hover {
     background: white;
-    color: rgb(239 83 97);
+    color: #4bb8d4;
     cursor: pointer;
 }
 
@@ -118,6 +118,15 @@ body {
     color: white;
 }
 
+.body-space {
+    margin-top: 16px;
+    padding: 40px 0;
+}
+
+.ContentTabs {
+    margin-top: 30px;
+}
+
 
 /* MenuWeb */
 
@@ -129,7 +138,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 4rem;
+    padding: 10px 4rem;
 }
 
 .MenuWebLogo {
@@ -183,14 +192,14 @@ body {
 }
 
 .MenuWebLinks span {
-    color: rgb(239 83 97);
+    color: #4bb8d4;
     margin-left: 20px;
     padding: 6px;
 }
 
 .MenuWebLinks span:hover {
     color: white;
-    background-color: rgb(239 83 97);
+    background-color: #4bb8d4;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -203,8 +212,8 @@ body {
     padding: 10px;
     z-index: 1;
     width: 100%;
-    background: #ed5361;
-    box-shadow: 0 2px 11px -3px #c57c7c;
+    background: #4bb8d4;
+    box-shadow: 0 2px 11px -3px #4bb8d4;
 }
 
 .MenuDrawerHeader {
@@ -214,8 +223,8 @@ body {
     width: 280px;
     margin: -17px;
     height: 74px;
-    background: #ed5361;
-    box-shadow: 0 2px 11px -3px #c84747;
+    background: #4bb8d4;
+    box-shadow: 0 2px 11px -3px #4bb8d4;
     padding: 4px 4px;
 }
 
@@ -256,26 +265,26 @@ body {
 
 .MenuDrawer-button {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 94%;
 }
 
 .MenuDrawer-button span {
     color: #ffffff;
-    background: #ed5361;
+    background: #4bb8d4;
     border-radius: 50%;
     padding: 10px;
-    border: 1px solid #ed5361;
-    box-shadow: 0 2px 11px -3px #c84747;
+    border: 1px solid #4bb8d4;
+    box-shadow: 0 2px 11px -3px #4bb8d4;
 }
 
 .MenuDrawer-button span:hover {
-    color: #ed5361;
+    color: #4bb8d4;
     background: #ffffff;
     border: 1px solid #ffffff;
     cursor: pointer;
-    box-shadow: 0 2px 9px -3px #970a16;
+    box-shadow: 0 2px 9px -3px #4bb8d4;
 }
 
 .MenuDrawer-button strong {
@@ -325,7 +334,6 @@ body {
 
 .MenuDrawer-content-links ul>li {
     padding: 17px;
-    border-bottom: 1px solid #c8c1c1;
     font-weight: bold;
     margin-bottom: 0px;
     display: flex;
@@ -335,8 +343,8 @@ body {
 
 .MenuDrawer-content-links ul>li.active,
 .MenuDrawer-content-links ul>li:hover {
-    background: #ed5361;
-    border-bottom: 1px solid #ed5361;
+    background: #4bb8d4;
+    border-bottom: 1px solid #4bb8d4;
     cursor: pointer;
     color: white;
 }
@@ -349,34 +357,39 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 4rem 0;
     background-color: black;
-    height: 50vh;
-    animation: Background 1.2s;
+    height: fit-content;
+    animation: BackgroundHeader 1.2s;
     animation-fill-mode: both;
 }
 
 .HeaderContent {
     text-align: center;
+    padding: 20px 0;
+}
+
+.HeaderContent img {
+    width: 36%;
 }
 
 .HeaderContent strong {
-    color: white;
+    margin-top: 40px;
+    color: black;
     letter-spacing: 6px;
     animation: HeaderContent-strong 1.2s;
     animation-fill-mode: both;
 }
 
 .HeaderContent p {
-    color: white;
-    margin: 30px 0;
+    color: black;
+    margin: 10px 0;
     letter-spacing: 3px;
 }
 
 .HeaderContent button {
-    color: rgb(239 83 97);
+    color: #4bb8d4;
     background-color: white;
-    border: 2px solid rgb(239 83 97);
+    border: 2px solid #4bb8d4;
     padding: 10px 20px;
     font-size: 11px;
 }
@@ -384,7 +397,7 @@ body {
 .HeaderContent button:hover {
     cursor: pointer;
     color: white;
-    background-color: rgb(239 83 97);
+    background-color: #4bb8d4;
     border: 2px solid white;
 }
 
@@ -394,6 +407,7 @@ body {
 .Content {
     padding: 50px 10%;
     text-align: center;
+    padding-top: 0;
 }
 
 .ContentOrder {
@@ -403,7 +417,7 @@ body {
 }
 
 .ContentOrder span {
-    color: rgb(239 83 97);
+    color: #4bb8d4;
     margin: 0 5px;
     padding: 5px;
 }
@@ -414,8 +428,68 @@ body {
     border-radius: 5%;
 }
 
-.ContentTabs {
-    margin: 30px 0;
+
+/* contacto */
+
+.Contact h3 {
+    margin: 0;
+}
+
+.ContactContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ContactItem {
+    margin: 10px;
+    background: white;
+    box-shadow: 0 5px 17px -14px #000000;
+    padding: 20px;
+    min-width: 180px;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.ContactItemHeader {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ContactItemHeader a {
+    margin: 10px;
+    background: white;
+    box-shadow: 0 5px 17px -14px #000000;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.ContactItemHeader a,
+.ContactItem a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.ContactItemHeader a>i,
+.ContactItem a>i {
+    margin-right: 10px;
+}
+
+.ContactItem1 a {
+    color: #7d7f80 !important;
+}
+
+.ContactItem2 a {
+    color: #4bb8d4 !important;
+}
+
+.ContactItem3 a {
+    color: green !important;
 }
 
 
@@ -437,8 +511,13 @@ body {
 }
 
 .ContentBodyBox img {
-    width: 100%;
-    object-fit: cover;
+    /*width: 100%;
+    object-fit: cover;*/
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    background-color: #f8f8f8;
+    padding: 2px;
 }
 
 .ContentBodyItemNoContent {
@@ -446,11 +525,11 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: rgb(239 83 97);
+    color: #4bb8d4;
 }
 
 .ContentBodyItemNoContent:hover {
-    border: 4px solid rgb(239 83 97);
+    border: 4px solid #4bb8d4;
     color: white;
     cursor: pointer;
     animation: Background 1.2s;
@@ -509,9 +588,9 @@ body {
     width: 300px;
     height: 150px;
     min-width: 300px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 5%;
-    box-shadow: 0 2px 10px -3px #3a3a3a;
+    box-shadow: 0 2px 10px -3px #c7c7c7;
     animation: ContentBodyItem-img 1.2s;
     animation-fill-mode: both;
 }
@@ -551,7 +630,7 @@ body {
 
 .content-btn-see-more button {
     color: white;
-    background-color: rgb(239 83 97);
+    background-color: #4bb8d4;
     border: 2px solid white;
     font-size: 16px;
     letter-spacing: 3px;
@@ -560,9 +639,125 @@ body {
 
 .content-btn-see-more button:hover {
     cursor: pointer;
-    color: rgb(239 83 97);
+    color: #4bb8d4;
     background-color: white;
-    border: 2px solid rgb(239 83 97);
+    border: 2px solid #4bb8d4;
+}
+
+
+/* Clients */
+
+.ClientsContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Clients {
+    text-align: center;
+}
+
+.ClientItem {
+    margin: 4px;
+    height: 182px;
+    border-radius: 2px;
+    box-shadow: 0 12px 18px -3px #ebebeb;
+    padding: 10px;
+    width: 155px;
+}
+
+.ClientItem img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.ClientItem strong {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #505050;
+}
+
+
+/* Packages */
+
+.PackagesContent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.PackagesContentItem {
+    margin: 4px 10px;
+}
+
+.PackagesContentItem h4 {
+    background: #f8f8f8;
+    padding: 17px;
+    border-radius: 8px;
+    box-shadow: 0 11px 18px -3px #f6f6f6;
+    font-weight: bold;
+    color: black;
+}
+
+.PackagesContentItem p {
+    color: rgb(185, 185, 185);
+}
+
+.PackagesContentItem ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.PackagesContentItem ul>li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6px 2px;
+}
+
+.PackagesContentItem ul>li>i {
+    color: #4bb8d4;
+    margin: 0 7px;
+}
+
+.PackagesContentItem div {
+    width: 100%;
+    margin-top: 36px;
+    height: 40px;
+}
+
+.PackagesContentItem div>b {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.PackagesContentItem-onlie {
+    margin-top: 30px;
+}
+
+.PackagesContentItem-onlie a>button {
+    background-color: white;
+    color: #51bbd5;
+    padding: 10px 20px;
+    border: 2px solid #51bbd5;
+    border-radius: 3px;
+    font-size: 30px;
+}
+
+.PackagesContentItem-onlie a>button:hover {
+    background-color: #51bbd5;
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.PackagesContentItem-onlie a>button>i {
+    margin: 0 5px;
 }
 
 
@@ -583,7 +778,7 @@ body {
 }
 
 .FooterCopy p>strong {
-    color: rgb(239 83 97);
+    color: #4bb8d4;
 }
 
 .FooterSocial {
@@ -594,25 +789,34 @@ body {
 
 .FooterSocial span {
     color: rgb(196, 196, 196);
-    margin: 0 6px;
-    font-size: 22px;
+    margin: 0 12px;
+    font-size: 32px;
     padding: 0;
 }
 
 .FooterSocial span:hover {
-    color: rgb(239 83 97);
+    color: #4bb8d4;
     cursor: pointer;
 }
 
 
 /* Animaciones */
 
+@keyframes BackgroundHeader {
+    0% {
+        background-color: #4bb8d4;
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}
+
 @keyframes Background {
     0% {
         background-color: transparent;
     }
     100% {
-        background-color: rgb(239 83 97);
+        background-color: #4bb8d4;
     }
 }
 
@@ -653,7 +857,7 @@ body {
         font-size: 20px;
     }
     100% {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -678,6 +882,8 @@ body {
     }
 }
 
+
+/*
 @media (max-width: 810px) {
     .MenuWeb-top {
         display: none;
@@ -686,6 +892,7 @@ body {
         display: block;
     }
 }
+*/
 
 @media (max-width: 800px) {
     .ContentBody {
@@ -710,7 +917,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
     .ContentBodyItem-list {
-        margin: 10px 0;
+        margin: 20px 0;
     }
     .ContentBodyItem-list img {
         width: 60px;

@@ -17,29 +17,29 @@ function App() {
   const [active, setActive] = useState(1); // menu activa 1: All, etc
   const [viewBy, setViewBy] = useState('GRID'); // grid || list
   const [items, setItems] = useState(ApiItems); // JSON -> items
-  const [stateMenuMobil, setStateMenuMobil] = useState(true); // Estado de menu movil, abierto/cerrado
+  const [stateMenuMobil, setStateMenuMobil] = useState(false); // Estado de menu movil, abierto/cerrado
   const [search, setSearch] = useState(false); // Estado de menu movil, abierto/cerrado
 
   const links = [
     {
       id: 1,
-      title: 'All'
-    },
-    {
-      id: 2,
-      title: 'Branding'
-    },
-    {
-      id: 3,
-      title: 'Web'
-    },
-    {
-      id: 4,
-      title: 'Photography'
+      title: 'Todo'
     },
     {
       id: 5,
-      title: 'App'
+      title: 'DIAN - FE'
+    },
+    {
+      id: 2,
+      title: 'Páginas web'
+    },
+    {
+      id: 3,
+      title: 'Apps Móviles'
+    },
+    {
+      id: 4,
+      title: 'Software'
     }
   ]
 
@@ -83,11 +83,11 @@ function App() {
 
   return (
     <div className="App">
-      <Search search={search} searchView={searchView}></Search>
-      <MenuDrawer search={search} searchView={searchView} openMenuMobil={openMenuMobil} stateMenuMobil={stateMenuMobil} links={links} activeMenu={activeMenu} active={active}></MenuDrawer>
-      <MenuWeb search={search} searchView={searchView} links={links} activeMenu={activeMenu} active={active} logo={true}></MenuWeb>
+      {/*<Search search={search} searchView={searchView}></Search>*/}
+      {/*<MenuDrawer search={search} searchView={searchView} openMenuMobil={openMenuMobil} stateMenuMobil={stateMenuMobil} links={links} activeMenu={activeMenu} active={active}></MenuDrawer>*/}
+      <MenuWeb search={search} searchView={searchView} links={links} activeMenu={activeMenu} active={active} logo={true} activeMenuTab={false}></MenuWeb>
       <Header></Header>
-      <Content search={search} searchView={searchView} links={links} activeMenu={activeMenu} active={active} changeViewItems={changeViewItems} viewBy={viewBy} ApiItems={items}></Content>
+      <Content activeMenuTab={true} search={search} searchView={searchView} links={links} activeMenu={activeMenu} active={active} changeViewItems={changeViewItems} viewBy={viewBy} ApiItems={items}></Content>
       <Footer></Footer>
     </div>
   );

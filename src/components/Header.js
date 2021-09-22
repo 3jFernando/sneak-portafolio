@@ -4,11 +4,13 @@ function Header() {
     return (
         <div className="Header">
             <div className="HeaderContent">
-                <strong>EXPLORE BEYOND HORIZON</strong>
-                <p>Magna mundi referrentur quo, no rebum dignissim qui.<br />
-                    Per quodsi accusata id, agam labores.</p>
+                <img src="/logo192.png"></img>
                 <br />
-                <button>VIEW OUR WORK</button>
+                <br />
+                <br />
+                <strong>DESARROLLO DE SOFTWARE PROFESIONAL</strong>
+                <p>- Apps móviles - Páginas web - Software  - Design UX/UI - Tiendas Online - Marketing digital - Y mucho más.</p>
+                <br />
             </div>
         </div>
     )

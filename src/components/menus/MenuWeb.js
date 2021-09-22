@@ -10,13 +10,13 @@ function MenuWeb(props) {
             {props.logo && (<div className="MenuWebLogo">
                 <img src={LOGO}></img>
                 <div className="MenuWebLogoTitle">
-                    <strong>SNEAK</strong>
+                    <strong>CLAROS SOLUCIONES</strong>
                     <br />
-                    <span>CREATE PORTOFLIO</span>
+                    <span>DESARROLLO DE SOFTWARE</span>
                 </div>
             </div>
             )}
-            <div className="MenuWebLinks">
+            {props.activeMenuTab && <div className="MenuWebLinks">
                 <ul>
                     {
                         props.links.map((link, index) => (
@@ -30,12 +30,13 @@ function MenuWeb(props) {
                         ))
                     }
                 </ul>
-                {props.logo && (
+                {/*props.logo && (
                     <span
                         className="fa fa-search"
                         onClick={() => props.searchView(true)}
-                    ></span>)}
+                ></span>)*/}
             </div>
+            }
         </div>
     )
 }

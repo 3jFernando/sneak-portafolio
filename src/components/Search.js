@@ -17,14 +17,12 @@ function Search(props) {
             <br />
             <br />
             <div className="FooterSearch">
-                <p>2016 - <strong>Sneak</strong> All Right Reserved</p>
+                <p>2020 - <strong>CLAROS SOLUCIONES</strong> Todos los derechos reservados.</p>
                 <br />
                 <div className="FooterSocial">
                     <span className="fa fa-facebook"></span>
-                    <span className="fa fa-twitter"></span>
+                    <span className="fa fa-instagram"></span>
                     <span className="fa fa-globe"></span>
-                    <span className="fa fa-google-plus"></span>
-                    <span className="fa fa-youtube"></span>
                 </div>
             </div>
         </div>
