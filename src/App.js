@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // componentes
 import Search from './components/Search'
@@ -14,6 +16,8 @@ import Footer from './components/Footer'
 const ApiItems = require('./utils/ITEMS.json');
 
 function App() {
+
+  AOS.init();
 
   const [active, setActive] = useState(1); // menu activa 1: All, etc
   const [viewBy, setViewBy] = useState('GRID'); // grid || list
