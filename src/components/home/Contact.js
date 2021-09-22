@@ -92,7 +92,7 @@ function Contact(props) {
                   <div className="sent-message">
                     Your message has been sent. Thank you!
                   </div>
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Enviar mensaje</button>
                 </div>
               </div>
             </form>
