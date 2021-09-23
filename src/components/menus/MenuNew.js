@@ -5,14 +5,14 @@ import {
   Nav
 } from 'react-bootstrap';
 
-const LOGO = "/logo192.png";
+const LOGO = "/assets/logo/LogoTransparentNew.png";
 
 function MenuNew() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          
+          <img className="navbar-logo-brand" src={LOGO}></img>
           <span>CLAROS SOLUCIONES</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -35,7 +35,7 @@ function Header() {
               data-aos="zoom-out"
               data-aos-delay={300}
             >
-              <img src="/logo192.png" className="img-fluid" alt />
+              <img src="/logoNew.png" className="img-fluid" alt />
             </div>
           </div>
         </div>
