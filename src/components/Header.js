@@ -5,7 +5,7 @@ function Header() {
         <section id="hero" className="hero d-flex align-items-center">
         <div className="container hero-inside">
           <div className="row">
-            <div className="col-lg-6 d-flex flex-column justify-content-center">
+            <div className="order-2 order-lg-1 col-lg-6 d-flex flex-column justify-content-center">
               <h1 data-aos="fade-in" >
                 DESARROLLO DE SOFTWARE PROFESIONAL
               </h1>
@@ -16,7 +16,7 @@ function Header() {
                 - Apps móviles - Páginas web - Software  - Design UX/UI - Tiendas Online - Marketing digital - Y mucho más.
               </h2>
               <div
-                data-aos="fade-up"
+                data-aos="fade-down"
                 data-aos-delay={700}
               >
                 <div className="PackagesContentItem-onlie text-center text-lg-start">
@@ -31,7 +31,7 @@ function Header() {
               </div>
             </div>
             <div
-              className="col-lg-6 hero-img"
+              className="order-1 order-lg-2  col-lg-6 hero-img"
               data-aos="zoom-out"
               data-aos-delay={300}
             >

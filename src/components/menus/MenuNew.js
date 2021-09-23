@@ -21,7 +21,7 @@ function MenuNew() {
             <Nav.Link href="#bussines">Valores</Nav.Link>
             <Nav.Link href="#contact">Contacto</Nav.Link>
             <Nav.Link href="#portfolio">Portafolio</Nav.Link>
-            <Nav.Link href="#services">Servicios</Nav.Link>
+            <Nav.Link href="#pricing">Servicios</Nav.Link>
             <Nav.Link href="#clients">Clientes</Nav.Link>
             <Nav.Link href="#features">
               <a

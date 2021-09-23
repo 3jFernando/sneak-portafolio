@@ -1,4 +1,5 @@
 import React from 'react';
+import ModalImage from "react-modal-image";
 
 // componentes
 import MenuNav from '../menus/MenuWeb'
@@ -53,7 +54,12 @@ function Content(props) {
 
                             {props.ApiItems.map((item, key) => (
                                 <div key={key} className={props.viewBy == 'GRID' ? `ContentBodyBox ${key} ContentBodyItem` : 'ContentBodyItem-list'} key={key}>
-                                    <img src={item.image}></img>
+                                    <ModalImage
+                                        small={item.image}
+                                        large={item.image}
+                                        hideDownload={true}
+                                        hideZoom={true}
+                                    />
                                     <div className={props.viewBy == 'GRID' ? 'ContentBodyBoxItem' : 'ContentBodyItemBody-list'}>
                                         <div>
                                             <strong>{item.title}</strong>
