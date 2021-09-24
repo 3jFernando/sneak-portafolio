@@ -1324,7 +1324,7 @@ section {
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #444444;
-  background: #fafbff;
+  background: #f7f9ff;
   padding: 30px;
 }
 .contact .info-box i {
@@ -1341,11 +1341,11 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 0;
 }
 .contact .php-email-form {
-  background: #fafbff;
+  background: #f7f9ff;
   padding: 30px;
   height: 100%;
 }
@@ -1409,7 +1409,7 @@ section {
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 50px;
 }
 .contact .php-email-form button[type="submit"]:hover {
   background: #36c8d6;

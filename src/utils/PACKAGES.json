@@ -1,0 +1,75 @@
+[
+    {
+      "title": "PÁGINA WEB",
+      "subtitle": "Página web contenido estadico",
+      "img": "/assets/img/pricing-free.png",
+      "delay": 100,
+      "services": [
+            "Formulario de contacto",
+            "1 banner",
+            "Diseño 100% personalizado",
+            "Vinculación redes sociales",
+            "Diseño responsive (Mobile,Tablet, PC)",
+            "Hosting y dominio incluido",
+            "Galería de fotos hasta 15 imágenes Inclusión de un video",
+            "Botón llamar y whatsapp. Vinculación de videos."
+        ]
+    },
+    {
+      "title": "PÁGINA WEB PROFESIONAL",
+      "subtitle": "Página web contenido dínamico",
+      "img": "assets/img/pricing-starter.png",
+      "delay": 200,
+      "services": [
+            "Formulario de contacto",
+            "2 banner",
+            "Diseño 100% personalizado",
+            "Vinculación redes sociales",
+            "Administrador de contenidos",
+            "Diseño responsive (Mobile,Tablet, PC)",
+            "Hosting y dominio incluido",
+            "Certificado seguridad SSL",
+            "Galería de fotos hasta 25 imágenes Inclusión de un video",
+            "Botón llamar y whatsapp. Vinculación de videos.",
+            "Modulo de noticias o blog administrable."
+        ]
+    },
+    {
+      "title": "TIENDA VIRTUAL",
+      "subtitle": "NAVEGACIÓN PERSONALIZADA",
+      "img": "assets/img/pricing-business.png",
+      "delay": 300,
+      "services": [
+            "Formulario de contacto",
+            "Diseño 100% personalizado",
+            "Vinculación redes sociales",
+            "Administrador de contenidos",
+            "Diseño responsive (Mobile,Tablet, PC)",
+            "Hosting y dominio incluido",
+            "Certificado seguridad SSL",
+            "Galeria de fotos",
+            "Botón llamar y whatsapp. Vinculación de videos.",
+            "Modulo de noticias o blog administrable.",
+            "Integración pagos Online"
+        ]
+    },
+    {
+      "title": "FACTURACION ELECTRONICA",
+      "subtitle": "NAVEGACIÓN PERSONALIZADA",
+      "img": "assets/img/pricing-ultimate.png",
+      "delay": 400,
+      "services": [
+            "Formulario de contacto",
+            "Diseño 100% personalizado",
+            "Vinculación redes sociales",
+            "Administrador de contenidos",
+            "Diseño responsive (Mobile,Tablet, PC)",
+            "Hosting y dominio incluido",
+            "Certificado seguridad SSL",
+            "Galeria de fotos",
+            "Botón llamar y whatsapp. Vinculación de videos.",
+            "Modulo de noticias o blog administrable.",
+            "Integración pagos Online"
+        ]
+    }
+]

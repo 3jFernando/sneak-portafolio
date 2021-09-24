@@ -10,8 +10,6 @@ SwiperCore.use([Navigation, Autoplay]);
 
 function Clients(props) {
 
-  // const [items, setItems] = useState(ApiClients); // JSON -> items
-
   return (
     <div id="clients" className="Clients body-space">
       <h2>NUESTROS CLIENTES</h2>

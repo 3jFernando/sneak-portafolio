@@ -5,7 +5,7 @@ function Contact(props) {
     {
       icon: "fa fa-map-marker",
       title: "Dirección",
-      subtitle: "A108 Adam Street",
+      subtitle: "Calle 20A N1D - 42",
     },
     {
         icon: "fa fa-phone",
