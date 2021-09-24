@@ -7,9 +7,8 @@ function Footer() {
         <div className="container">
           <div className="row gy-4">
             <div className="col-lg-5 col-md-12 footer-info">
-              <a href="index.html" className="logo d-flex align-items-center">
-                <img src="assets/logo/logo actual.png" alt />
-                <span>CLAROS SOLUCIONES</span>
+              <a href="./" className="logo d-flex align-items-center">
+                <img src="assets/logo/Logo transparent.png" alt />
               </a>
               <p>
                 Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
@@ -35,21 +34,21 @@ function Footer() {
               <h4>Links Accesos</h4>
               <ul>
                 <li>
-                  <i className="bi bi-chevron-right" /> <a href="#">Home</a>
+                  <i className="bi bi-chevron-right" /> <a href="#">Inicio</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" /> <a href="#">About us</a>
+                  <i className="bi bi-chevron-right" /> <a href="#">Nuestros valores</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" /> <a href="#">Services</a>
-                </li>
-                <li>
-                  <i className="bi bi-chevron-right" />
-                  <a href="#">Terms of service</a>
+                  <i className="bi bi-chevron-right" /> <a href="#">Servicios</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Privacy policy</a>
+                  <a href="#">Términos de servicio</a>
+                </li>
+                <li>
+                  <i className="bi bi-chevron-right" />
+                  <a href="#">Política de privacidad</a>
                 </li>
               </ul>
             </div>
@@ -58,33 +57,35 @@ function Footer() {
               <ul>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Web Design</a>
+                  <a href="#">Desarrollo de software</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Web Development</a>
+                  <a href="#">Tiendas virtuales</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Product Management</a>
+                  <a href="#">Páginas web</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Marketing</a>
+                  <a href="#">Plataformas web y de escritorio</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Graphic Design</a>
+                  <a href="#">Apps móviles</a>
+                </li>
+                <li>
+                  <i className="bi bi-chevron-right" />
+                  <a href="#">Diseño UX/UI</a>
                 </li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-              <h4>Contactenos</h4>
+              <h4>Ubicación </h4>
               <p>
-                A108 Adam Street <br />
-                
-                <br />
-                United States <br />
+                Calle 20A N1D - 42 <br />
+                Pitalito, Huila - Colombia <br />
                 <br />
                 <strong>Teléfono:</strong> +57 (315) 670-5317
                 <br />
@@ -99,8 +100,8 @@ function Footer() {
         <div className="copyright">
           © Copyright{" "}
           <strong>
-            <span>CLAROS SOLUCIONES</span>
-          </strong>
+            <span>CLAROS SOLUCIONES </span>
+          </strong>{" "}
           2021
         </div>
         <div className="credits">
