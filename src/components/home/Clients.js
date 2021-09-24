@@ -44,7 +44,7 @@ function Clients(props) {
               <img
                 src={item.image}
                 className="testimonial-img"
-                alt
+                alt="true"
               />
               <h3>{item.client}</h3>
               <h4>{item.description}</h4>

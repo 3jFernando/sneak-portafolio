@@ -94,7 +94,7 @@ function Packages(props) {
               <div className="box">
                 <h3 style={{ color: "#07d5c0" }}>{item.title}</h3>
                   <p>{item.subtitle}</p>
-                <img src={item.img} className="img-fluid" alt />
+                <img src={item.img} className="img-fluid" alt="true" />
                 <ul>
                   {item.services.map((service, indexService) => (
                     <li key={indexService}>

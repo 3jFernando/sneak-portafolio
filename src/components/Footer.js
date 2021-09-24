@@ -8,7 +8,7 @@ function Footer() {
           <div className="row gy-4">
             <div className="col-lg-5 col-md-12 footer-info">
               <a href="./" className="logo d-flex align-items-center">
-                <img src="assets/logo/Logo transparent.png" alt />
+                <img src="assets/logo/Logo transparent.png" alt="true" />
               </a>
               <p>
                 Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
@@ -19,10 +19,22 @@ function Footer() {
                 <a href="#" className="twitter">
                   <i className="fa fa-twitter" />
                 </a>
-                <a href="#" className="facebook">
+                <a
+                  href="#"
+                  className="facebook"
+                  onClick={() =>
+                    window.open("https://facebook.com/Claros-soluciones")
+                  }
+                >
                   <i className="fa fa-facebook" />
                 </a>
-                <a href="#" className="instagram">
+                <a
+                  href="#"
+                  className="instagram"
+                  onClick={() =>
+                    window.open("https://instagram.com/claros_soluciones")
+                  }
+                >
                   <i className="fa fa-instagram" />
                 </a>
                 <a href="#" className="linkedin">
@@ -37,10 +49,12 @@ function Footer() {
                   <i className="bi bi-chevron-right" /> <a href="#">Inicio</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" /> <a href="#">Nuestros valores</a>
+                  <i className="bi bi-chevron-right" />{" "}
+                  <a href="#">Nuestros valores</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" /> <a href="#">Servicios</a>
+                  <i className="bi bi-chevron-right" />{" "}
+                  <a href="#">Servicios</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
@@ -87,9 +101,15 @@ function Footer() {
                 Calle 20A N1D - 42 <br />
                 Pitalito, Huila - Colombia <br />
                 <br />
-                <strong>Teléfono:</strong> +57 (315) 670-5317
+                <strong>Teléfono: </strong>
+                <a target="_blank" href="callto:(315)670-5317">
+                  +57 (315) 670-5317
+                </a>
                 <br />
-                <strong>Email:</strong> contacto@claros-soluciones.com
+                <strong>Email: </strong>
+                <a target="_blank" href="mailto:contacto@claros-soluciones.com">
+                  contacto@claros-soluciones.com
+                </a>
                 <br />
               </p>
             </div>
@@ -104,9 +124,7 @@ function Footer() {
           </strong>{" "}
           2021
         </div>
-        <div className="credits">
-            Todos los derechos reservados.
-        </div>
+        <div className="credits">Todos los derechos reservados.</div>
       </div>
     </footer>
   );

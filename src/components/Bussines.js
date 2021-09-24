@@ -18,7 +18,7 @@ function Bussines(props) {
                 data-aos-delay={200}
                 data-aos-duration="1000"
               >
-                <img src="assets/img/values-1.png" className="img-fluid" alt />
+                <img src="assets/img/values-1.png" className="img-fluid" alt="true" />
                 <h3>
                     Compromiso
                 </h3>
@@ -33,7 +33,7 @@ function Bussines(props) {
                 data-aos="fade-up"
                 data-aos-delay={400}
               >
-                <img src="assets/img/values-2.png" className="img-fluid" alt />
+                <img src="assets/img/values-2.png" className="img-fluid" alt="true" />
                 <h3>
                     Trabajo en Equipo
                 </h3>
@@ -48,7 +48,7 @@ function Bussines(props) {
                 data-aos="fade-up"
                 data-aos-delay={600}
               >
-                <img src="assets/img/values-3.png" className="img-fluid" alt />
+                <img src="assets/img/values-3.png" className="img-fluid" alt="true" />
                 <h3>
                     Agilidad
                 </h3>
