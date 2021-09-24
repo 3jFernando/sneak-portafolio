@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "client": "SUMINISTROS Y SERVICIOS",
+        "description": "ALTERNATIVOS S.A.S",
+        "image": "assets/clients/sualternativasas.png",
+        "testimony": "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
+    },
+    {
+        "id": 1,
+        "client": "NaranjaERP S.A.S.",
+        "description": "Nuevo Cliente",
+        "image": "assets/clients/naranjaerp.png",
+        "testimony": "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
+    },
+    {
+        "id": 2,
+        "client": "MCS Consultoria",
+        "description": "Facturación Electronica",
+        "image": "assets/clients/mcs.png",
+        "testimony": "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
+    },
+    {
+        "id": 3,
+        "client": "K&F Motos",
+        "description": "",
+        "image": "assets/clients/kyf-motos.jpg",
+        "testimony": "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
+    },
+    {
+        "id": 4,
+        "client": "Ingeniero Freddy",
+        "description": "",
+        "image": "assets/clients/cliente1.jpeg",
+        "testimony": "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
+    }
+]
