@@ -39,7 +39,6 @@ function Content(props) {
             <div className="body-space" id="portfolio">
                 <h2>NUESTRO PORFTAFOLIO</h2>
                 <br />
-
                 <div className="ContentOrder">
                     <span className="material-icons" onClick={() => props.changeViewItems('GRID')}>grid_view</span>
                     <span className="material-icons" onClick={() => props.changeViewItems('LIST')}>view_agenda</span>
@@ -70,6 +69,7 @@ function Content(props) {
                                 </div>
                             ))}
                         </div>
+
                     ) : (
                         <div className="ContentBodyItemNoContent">
                             No hay resultados para mostrar...
