@@ -5,7 +5,7 @@
 
 body {
   font-family: "Montserrat", serif;
-  font-family: "Questrial", serif;
+  font-family: "Questrial", serif!important;
   font-size: 14px;
   padding: 0;
   margin: 0;
@@ -732,8 +732,8 @@ body {
   color: #51bbd5;
   padding: 10px 20px;
   border: 2px solid #51bbd5;
-  border-radius: 3px;
-  font-size: 30px;
+  border-radius: 50px;
+  font-size: 24px;
 }
 
 .PackagesContentItem-onlie a > button:hover {
@@ -964,15 +964,14 @@ body {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #2a95e9;
 }
 .hero h2 {
   color: #444444;
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 19px;
 }
 .hero-inside {
-  margin-top: -6rem;
+  margin-top: -8rem;
 }
 .hero .btn-get-started i {
   margin-left: 5px;
@@ -1011,7 +1010,7 @@ body {
     text-align: center;
   }
   .hero h1 {
-    font-size: 32px;
+    display: none;
   }
   .hero h2 {
     font-size: 24px;
@@ -1121,9 +1120,10 @@ section {
   */
 .navbar {
   padding: 0;
+  text-transform: uppercase;
 }
 .navbar-logo-brand {
-  width: 34%;
+  width: 27%;
   margin-right: 0.5rem;
 }
 .navbar ul {
@@ -1136,17 +1136,21 @@ section {
 .navbar li {
   position: relative;
 }
-.navbar a,
-.navbar a:focus {
+.navbar a {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0 10px 30px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #013289;
   white-space: nowrap;
   transition: 0.3s;
+}
+a.navbar-brand {
+  justify-content: flex-start;
+  padding-left: 0;
+  letter-spacing: 1px;
 }
 .navbar a i,
 .navbar a:focus i {

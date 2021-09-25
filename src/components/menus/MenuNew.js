@@ -28,7 +28,7 @@ function MenuNew() {
                 className="text-decoration-none getstarted scrollto"
                 href="#about"
               >
-                Cotizar
+                Cotiza tu servicio
               </a>
             </Nav.Link>
           </Nav>

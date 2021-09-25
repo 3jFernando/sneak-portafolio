@@ -16,11 +16,11 @@ function Footer() {
                 iaculis eu non diam phasellus.
               </p>
               <div className="social-links mt-3">
-                <a href="#" className="twitter">
+                <a href="/#" className="twitter">
                   <i className="fa fa-twitter" />
                 </a>
                 <a
-                  href="#"
+                  href="/#"
                   className="facebook"
                   onClick={() =>
                     window.open("https://facebook.com/Claros-soluciones")
@@ -29,7 +29,7 @@ function Footer() {
                   <i className="fa fa-facebook" />
                 </a>
                 <a
-                  href="#"
+                  href="/#"
                   className="instagram"
                   onClick={() =>
                     window.open("https://instagram.com/claros_soluciones")
@@ -37,7 +37,7 @@ function Footer() {
                 >
                   <i className="fa fa-instagram" />
                 </a>
-                <a href="#" className="linkedin">
+                <a href="/#" className="linkedin">
                   <i className="fa fa-linkedin" />
                 </a>
               </div>
@@ -46,23 +46,23 @@ function Footer() {
               <h4>Links Accesos</h4>
               <ul>
                 <li>
-                  <i className="bi bi-chevron-right" /> <a href="#">Inicio</a>
+                  <i className="bi bi-chevron-right" /> <a href="/#">Inicio</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />{" "}
-                  <a href="#">Nuestros valores</a>
+                  <a href="/#">Nuestros valores</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />{" "}
-                  <a href="#">Servicios</a>
+                  <a href="/#">Servicios</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Términos de servicio</a>
+                  <a href="/#">Términos de servicio</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Política de privacidad</a>
+                  <a href="/#">Política de privacidad</a>
                 </li>
               </ul>
             </div>
@@ -71,27 +71,27 @@ function Footer() {
               <ul>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Desarrollo de software</a>
+                  <a href="/#">Desarrollo de software</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Tiendas virtuales</a>
+                  <a href="/#">Tiendas virtuales</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Páginas web</a>
+                  <a href="/#">Páginas web</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Plataformas web y de escritorio</a>
+                  <a href="/#">Plataformas web y de escritorio</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Apps móviles</a>
+                  <a href="/#">Apps móviles</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
-                  <a href="#">Diseño UX/UI</a>
+                  <a href="/#">Diseño UX/UI</a>
                 </li>
               </ul>
             </div>
