@@ -33,7 +33,7 @@ function Contact(props) {
           <div className="col-lg-6">
             <div className="row gy-4">
               {infoContact.map((item, index) => (
-                <div className="col-md-6">
+                <div className="col-md-6" key={index}>
                   <div className="info-box">
                     <i className={item.icon} />
                     <h3>{item.title}</h3>

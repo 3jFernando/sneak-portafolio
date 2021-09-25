@@ -29,7 +29,7 @@ function Packages(props) {
                     </li>
                   ))}
                 </ul>
-                <a href="#" className="btn-buy text-decoration-none">
+                <a href="/#" className="btn-buy text-decoration-none">
                   Comprar
                 </a>
               </div>

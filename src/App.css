@@ -1169,6 +1169,7 @@ a.navbar-brand {
   background: #2a95e9;
   padding: 8px 20px;
   border-radius: 4px;
+  border: 0;
   color: #fff;
 }
 .navbar .getstarted:hover,

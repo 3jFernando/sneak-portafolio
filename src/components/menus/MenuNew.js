@@ -24,12 +24,12 @@ function MenuNew() {
             <Nav.Link href="#pricing">Servicios</Nav.Link>
             <Nav.Link href="#clients">Clientes</Nav.Link>
             <Nav.Link href="#features">
-              <a
+              <button
                 className="text-decoration-none getstarted scrollto"
                 href="#about"
               >
                 Cotiza tu servicio
-              </a>
+              </button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
