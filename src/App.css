@@ -118,7 +118,7 @@ body {
 }
 
 .body-space {
-  margin-top: 16px;
+  margin: 16px 10rem;
   padding: 40px 0;
 }
 
@@ -531,15 +531,16 @@ body {
 .ContentBodyBoxItem {
   position: absolute;
   bottom: 0;
-  height: 48%;
+  height: 53%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0 0 15px 15px;
 }
 
 .ContentBodyBoxItem div > strong {
-  font-size: 20px;
+  font-size: 17px;
   color: white;
   letter-spacing: 4px;
   font-weight: bold;
@@ -547,14 +548,15 @@ body {
 }
 
 .ContentBodyBoxItem div > hr {
-  width: 80%;
+  width: 100%;
   display: none;
 }
 
 .ContentBody div > span {
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   display: none;
+  font-size: 15px;
 }
 
 .ContentBodyBoxItem {
@@ -601,7 +603,7 @@ body {
   height: 2px;
   background: #000000;
   border-radius: 10px;
-  width: 80%;
+  width: 100%;
   border: 0;
 }
 
@@ -642,7 +644,6 @@ body {
 }
 
 .Clients {
-  padding: 50px 10%;
   text-align: center;
 }
 
@@ -863,6 +864,9 @@ body {
 @media (max-width: 900px) {
   .Content {
     padding: 20px;
+  }
+  .body-space {
+    margin: 16px 3rem;
   }
 }
 
@@ -1155,7 +1159,7 @@ a.navbar-brand {
 }
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 19px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -1441,7 +1445,7 @@ a.navbar-brand {
 .footer {
   background: #f6f9ff;
   padding: 0 0 30px 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer .footer-top {
@@ -1476,7 +1480,7 @@ a.navbar-brand {
   margin-top: 3px;
 }
 .footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Nunito", sans-serif;
@@ -1593,6 +1597,9 @@ footer a {
 @media (max-width: 425px) {
   .testimonial-item .testimonial-img {
     width: 85%;
+  }
+  .testimonial-item {
+    margin: 0;
   }
 }
 .swiper-pagination {

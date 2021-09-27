@@ -1,12 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Autoplay } from "swiper";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/swiper-bundle.css";
 
 //api
 const ApiClients = require("../../utils/CLIENTS.json");
 
-SwiperCore.use([Navigation, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 function Clients(props) {
   return (
@@ -14,7 +14,7 @@ function Clients(props) {
       <h2>NUESTROS CLIENTES</h2>
       <br />
       <Swiper
-        navigation={true}
+        navigation={false}
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
@@ -25,6 +25,7 @@ function Clients(props) {
         }}
         pagination={{
           clickable: true,
+          "dynamicBullets": true
         }}
         className="mySwiper"
       >

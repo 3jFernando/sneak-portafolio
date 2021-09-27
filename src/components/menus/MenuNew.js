@@ -23,12 +23,13 @@ function MenuNew() {
             <Nav.Link href="#portfolio">Portafolio</Nav.Link>
             <Nav.Link href="#pricing">Servicios</Nav.Link>
             <Nav.Link href="#clients">Clientes</Nav.Link>
-            <Nav.Link href="#features">
+            <Nav.Link href="https://api.whatsapp.com/send/?phone=%2B573222822111&amp;text=Hola+CLAROS+SOLUCIONES+me+interesan+tus+servicios.">
               <button
                 className="text-decoration-none getstarted scrollto"
                 href="#about"
               >
                 Cotiza tu servicio
+                <i class="fa fa-whatsapp"></i>
               </button>
             </Nav.Link>
           </Nav>
