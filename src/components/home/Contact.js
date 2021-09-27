@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
+
 
 function Contact(props) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_djiooks",
+        "template_i3u3qgu",
+        form.current,
+        "user_ABjgsGsAkFpLWPCV15cC1"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const infoContact = [
     {
       icon: "fa fa-map-marker",
@@ -8,20 +33,20 @@ function Contact(props) {
       subtitle: "Calle 20A N1D - 42",
     },
     {
-        icon: "fa fa-phone",
-        title: "Teléfono",
-        subtitle: "+57 (315) 670-5317",
-      },
-      {
-        icon: "fa fa-envelope-o",
-        title: "Email",
-        subtitle: "contacto@claros-soluciones.com",
-      },
-      {
-        icon: "fa fa-clock-o",
-        title: "Horario",
-        subtitle: "24 horas",
-      },
+      icon: "fa fa-phone",
+      title: "Teléfono",
+      subtitle: "+57 (315) 670-5317",
+    },
+    {
+      icon: "fa fa-envelope-o",
+      title: "Email",
+      subtitle: "contacto@claros-soluciones.com",
+    },
+    {
+      icon: "fa fa-clock-o",
+      title: "Horario",
+      subtitle: "24 horas",
+    },
   ];
   return (
     <section id="contact" className="contact">
@@ -38,7 +63,7 @@ function Contact(props) {
                     <i className={item.icon} />
                     <h3>{item.title}</h3>
                     <p>
-                        {item.subtitle}
+                      {item.subtitle}
                       <br />
                     </p>
                   </div>
@@ -47,12 +72,12 @@ function Contact(props) {
             </div>
           </div>
           <div className="col-lg-6">
-            <form action="" method="post" className="php-email-form">
+            <form ref={form} onSubmit={sendEmail} className="php-email-form">
               <div className="row gy-4">
                 <div className="col-md-6">
                   <input
                     type="text"
-                    name="name"
+                    name="user_name"
                     className="form-control"
                     placeholder="Tu nombre completo"
                     required
@@ -62,7 +87,7 @@ function Contact(props) {
                   <input
                     type="email"
                     className="form-control"
-                    name="email"
+                    name="user_email"
                     placeholder="Tu email"
                     required
                   />
@@ -71,7 +96,7 @@ function Contact(props) {
                   <input
                     type="text"
                     className="form-control"
-                    name="subject"
+                    name="from_name"
                     placeholder="Asunto"
                     required
                   />
