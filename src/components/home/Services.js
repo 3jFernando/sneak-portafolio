@@ -14,10 +14,7 @@ function Services() {
             <h2>Nuestros Servicios</h2>
           </header>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+          Los servicios que prestamos en el área de desarrollo de aplicaciones de nuestra empresa le permitirán mejorar la eficiencia y agilidad en los procesos operativos que tenga buscando implementar una solución optima a sus necesidades. Estas y muchas mas ventajas son las que prestamos a nuestros clientes con las ultimas tecnologías de innovación. 
           </p>
         </div>
         <div className="row content">
@@ -56,28 +53,27 @@ function Services() {
             data-aos-delay={100}
           >
             <h3>
-              Dignissimos provident quasi corporis voluptates sit assumenda.
+              Beneficios que te ofrecemos como empresa.
             </h3>
             <p className="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Los principales beneficios que ofrecemos con la ayuda de las ultimas tecnologías que usamos para la implementación y creación en los proyectos de desarrollo de software.
             </p>
             <ul>
               <li>
-                <i className="fa fa-check" /> Ullamco laboris nisi ut aliquip ex
-                ea commodo consequat.
+                <i className="fa fa-check" /> 
+                Desarrollamos con herramientas que se ajusta a las necesidades de la empresa o proyecto y los procesos que la integran.
               </li>
               <li>
-                <i className="fa fa-check" /> Duis aute irure dolor in
-                reprehenderit in voluptate velit.
+                <i className="fa fa-check" /> 
+                Diseñamos, construimos y desplegamos aplicativos a la medida, de acuerdo a la prioridad y necesidades del proyecto o solución que necesite.
               </li>
               <li>
-                <i className="fa fa-check" /> Ullam est qui quos consequatur eos
-                accusamus.
+                <i className="fa fa-check" /> 
+                Aplicaciones intuitivas y con fáciles de uso, ajustadas a los direrentes dispositivos permitiéndoles ser más eficaces en sus funciones.
               </li>
               <li>
-                <i className="fa fa-check" /> Ullamco laboris nisi ut aliquip ex
-                ea commodo consequat.
+                <i className="fa fa-check" /> 
+                Buscamos que la información y desarrollo de nuestros clientes estén totalmente protegidas con una implementación de seguridad optima
               </li>
             </ul>
           </div>
