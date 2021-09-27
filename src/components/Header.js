@@ -21,7 +21,7 @@ function Header() {
               >
                 <div className="PackagesContentItem-onlie text-center text-lg-start">
                   <a
-                    href="#about"
+                    href="#contact"
                     className="text-decoration-none scrollto d-inline-flex align-items-center justify-content-center align-self-center"
                   >
                     <button>Contactanos</button>

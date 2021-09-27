@@ -45,7 +45,7 @@ function Contact(props) {
     {
       icon: "fa fa-clock-o",
       title: "Horario",
-      subtitle: "24 horas",
+      subtitle: "Lunes a Viernes 8:00am - 12:00pm / 2:00pm - 6:00pm",
     },
   ];
   return (

@@ -24,8 +24,8 @@ function Content(props) {
                     <div className="ContactItem ContactItem2">
                         <a
                             target="_blank"
-                            href="callto:(315)670-5317"
-                        ><i className="fa fa-phone"></i>+57 (315) 670-5317</a>
+                            href="tel:3222822111"
+                        ><i className="fa fa-phone"></i>+57 (322) 322-2111</a>
                     </div>
                     <div className="ContactItem ContactItem3">
                         <a

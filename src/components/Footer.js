@@ -102,8 +102,8 @@ function Footer() {
                 Pitalito, Huila - Colombia <br />
                 <br />
                 <strong>Teléfono: </strong>
-                <a target="_blank" href="tel:3156705317">
-                  +57 (315) 670-5317
+                <a target="_blank" href="tel:3222822111">
+                  +57 (322) 282-2211
                 </a>
                 <br />
                 <strong>Email: </strong>
