@@ -150,10 +150,10 @@ function Footer() {
       {isVisible && (
         <a
           href="#"
-          class="back-to-top d-flex align-items-center justify-content-center active"
+          className="back-to-top d-flex align-items-center justify-content-center active"
           onClick={scrollToTop}
         >
-          <i class="fa fa-arrow-up"></i>
+          <i className="fa fa-arrow-up"></i>
         </a>
       )}
     </footer>

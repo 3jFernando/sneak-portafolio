@@ -29,7 +29,7 @@ function MenuNew() {
                 href="#about"
               >
                 Cotiza tu servicio
-                <i class="fa fa-whatsapp"></i>
+                <i className="fa fa-whatsapp"></i>
               </button>
             </Nav.Link>
           </Nav>

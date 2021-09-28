@@ -1,24 +1,26 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
 
 function Contact(props) {
   const form = useRef();
+  const [sentMessage, setSentMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_djiooks",
-        "template_i3u3qgu",
+        process.env.REACT_APP_EMAILJS_SERVICE,
+        process.env.REACT_APP_EMAILJS_TEMPLATE,
         form.current,
-        "user_ABjgsGsAkFpLWPCV15cC1"
+        process.env.REACT_APP_EMAILJS_USER,
       )
       .then(
-        (result) => {
+        (result ) => {
           console.log(result.text);
-          e.target.reset();
+            e.target.reset();
+            setSentMessage(true);
         },
         (error) => {
           console.log(error.text);
@@ -113,9 +115,14 @@ function Contact(props) {
                 </div>
                 <div className="col-md-12 text-center">
                   <div className="loading">Loading</div>
-                  <div className="error-message" />
-                  <div className="sent-message">
-                    Your message has been sent. Thank you!
+                  <div className="error-message">Error al enviar el mensaje. Vuelve a intentarlo más tarde.</div>
+                  {sentMessage &&
+                    <div className="sent-message">
+                      Tu mensaje ha sido enviado. ¡Gracias!
+                    </div>
+                  }
+                  <div className="pb-2 fst-italic">
+                    <p style={{ fontSize: 12 }}>* Al enviar este formulario aceptas nuestras Políticas de privacidad</p>
                   </div>
                   <button type="submit">Enviar mensaje</button>
                 </div>
