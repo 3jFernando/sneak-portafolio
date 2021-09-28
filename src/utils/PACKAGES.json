@@ -13,7 +13,8 @@
             "Hosting y dominio incluido",
             "Galería de fotos hasta 15 imágenes Inclusión de un video",
             "Botón llamar y whatsapp. Vinculación de videos."
-        ]
+        ],
+        "buyPackage": "https://api.whatsapp.com/send/?phone=%2B573222822111&amp;text=Hola+CLAROS+SOLUCIONES+me+interesan+comprar+el+servicio+de+PÁGINA+WEB."
     },
     {
       "title": "PÁGINA WEB PROFESIONAL",
@@ -32,7 +33,8 @@
             "Galería de fotos hasta 25 imágenes Inclusión de un video",
             "Botón llamar y whatsapp. Vinculación de videos.",
             "Modulo de noticias o blog administrable."
-        ]
+        ],
+        "buyPackage": "https://api.whatsapp.com/send/?phone=%2B573222822111&amp;text=Hola+CLAROS+SOLUCIONES+me+interesan+comprar+el+servicio+de+PÁGINA+WEB+PROFESIONAL."
     },
     {
       "title": "TIENDA VIRTUAL",
@@ -51,10 +53,11 @@
             "Botón llamar y whatsapp. Vinculación de videos.",
             "Modulo de noticias o blog administrable.",
             "Integración pagos Online"
-        ]
+        ],
+        "buyPackage": "https://api.whatsapp.com/send/?phone=%2B573222822111&amp;text=Hola+CLAROS+SOLUCIONES+me+interesan+comprar+el+servicio+de+TIENDA+VIRTUAL."
     },
     {
-      "title": "FACTURACION ELECTRONICA",
+      "title": "FACTURACIÓN ELECTRÓNICA",
       "subtitle": "NAVEGACIÓN PERSONALIZADA",
       "img": "assets/img/pricing-ultimate.png",
       "delay": 400,
@@ -70,6 +73,7 @@
             "Botón llamar y whatsapp. Vinculación de videos.",
             "Modulo de noticias o blog administrable.",
             "Integración pagos Online"
-        ]
+        ],
+        "buyPackage": "https://api.whatsapp.com/send/?phone=%2B573222822111&amp;text=Hola+CLAROS+SOLUCIONES+me+interesan+comprar+el+servicio+de+FACTURACIÓN+ELECTRÓNICA."
     }
 ]
