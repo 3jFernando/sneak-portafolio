@@ -67,22 +67,22 @@ function Footer() {
               <h4>Links Accesos</h4>
               <ul>
                 <li>
-                  <i className="bi bi-chevron-right" /> <a href="/#">Inicio</a>
+                  <i className="fa fa-chevron-right" /> <a href="/#">Inicio</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" />{" "}
+                  <i className="fa fa-chevron-right" />{" "}
                   <a href="#bussines">Nuestros valores</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" />{" "}
+                  <i className="fa fa-chevron-right" />{" "}
                   <a href="#pricing">Servicios</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" />
+                  <i className="fa fa-chevron-right" />
                   <a href="/#">Términos de servicio</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" />
+                  <i className="fa fa-chevron-right" />
                   <a href="/#">Política de privacidad</a>
                 </li>
               </ul>
@@ -91,27 +91,27 @@ function Footer() {
               <h4>Nuestros servicios</h4>
               <ul>
                 <li>
-                  <i className="bi bi-chevron-right" />
+                  <i className="fa fa-chevron-right" />
                   <a href="/#">Desarrollo de software</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" />
+                  <i className="fa fa-chevron-right" />
                   <a href="/#">Tiendas virtuales</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" />
+                  <i className="fa fa-chevron-right" />
                   <a href="/#">Páginas web</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" />
+                  <i className="fa fa-chevron-right" />
                   <a href="/#">Plataformas web y de escritorio</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" />
+                  <i className="fa fa-chevron-right" />
                   <a href="/#">Apps móviles</a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right" />
+                  <i className="fa fa-chevron-right" />
                   <a href="/#">Diseño UX/UI</a>
                 </li>
               </ul>
