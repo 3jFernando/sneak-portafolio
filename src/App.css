@@ -1707,3 +1707,32 @@ footer a {
 .features .content p:last-child {
   margin-bottom: 0;
 }
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #2a95e9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 19px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #0d81da;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}

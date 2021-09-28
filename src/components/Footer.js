@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Footer() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+  }, []);
+
   return (
     <footer id="footer" className="footer">
       <div className="footer-top">
@@ -11,9 +32,9 @@ function Footer() {
                 <img src="assets/logo/Logo transparent.png" alt="true" />
               </a>
               <p>
-                Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
-                nada terra videa magna derita valies darta donna mare fermentum
-                iaculis eu non diam phasellus.
+                Somos una Empresa de desarrollo, diseño e implementación de
+                soluciones tecnológicas a nivel profesional que nos adaptamos
+                segun los requerimientos y necesidades de nuestros clientes.
               </p>
               <div className="social-links mt-3">
                 <a href="/#" className="twitter">
@@ -50,11 +71,11 @@ function Footer() {
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />{" "}
-                  <a href="/#">Nuestros valores</a>
+                  <a href="#bussines">Nuestros valores</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />{" "}
-                  <a href="/#">Servicios</a>
+                  <a href="#pricing">Servicios</a>
                 </li>
                 <li>
                   <i className="bi bi-chevron-right" />
@@ -126,6 +147,15 @@ function Footer() {
         </div>
         <div className="credits">Todos los derechos reservados.</div>
       </div>
+      {isVisible && (
+        <a
+          href="#"
+          class="back-to-top d-flex align-items-center justify-content-center active"
+          onClick={scrollToTop}
+        >
+          <i class="fa fa-arrow-up"></i>
+        </a>
+      )}
     </footer>
   );
 }
