@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 function Contact(props) {
   const form = useRef();
   const [sentMessage, setSentMessage] = useState(false);
+  const [sentError, setSentError] = useState(false);
   const [sendingForm, setsendingForm] = useState(false);
 
   const sendEmail = (e) => {
@@ -25,6 +26,7 @@ function Contact(props) {
         },
         (error) => {
           console.log(error.text);
+          setSentError(true);
         }
       );
   };
@@ -57,7 +59,10 @@ function Contact(props) {
         <header className="section-header">
           <h2>Contactanos</h2>
         </header>
-          <p className="text-center">Comunícate con nosotros para mayor información sobre nuestros productos y servicios</p>
+        <p className="text-center">
+          Comunícate con nosotros para mayor información sobre nuestros
+          productos y servicios
+        </p>
         <div className="row gy-4">
           <div className="col-lg-6">
             <div className="row gy-4">
@@ -116,12 +121,13 @@ function Contact(props) {
                   />
                 </div>
                 <div className="col-md-12 text-center">
-                  <div className="error-message">
-                    Error al enviar el mensaje. Vuelve a intentarlo más tarde.
-                  </div>
                   {sentMessage ? (
                     <div className="sent-message">
                       Tu mensaje ha sido enviado. ¡Gracias!
+                    </div>
+                  ) : sentError ? (
+                    <div className="error-message">
+                      Error al enviar el mensaje. Vuelve a intentarlo más tarde.
                     </div>
                   ) : (
                     sendingForm && <div className="loading">Loading</div>

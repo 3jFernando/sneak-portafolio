@@ -587,7 +587,6 @@ body {
 }
 
 .ContentBodyItem-list {
-  border-radius: 6px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -905,19 +904,16 @@ body {
   }
   .ContentBodyItem-list {
     margin: 20px 0;
+    border-top: 1px solid #3c3c3c;
   }
   .ContentBodyItem-list img {
-    width: 60px;
-    height: 60px;
     min-width: 60px !important;
-    border-radius: 50%;
   }
   .ContentBodyItemBody {
     margin-top: 20px;
   }
   .ContentBodyItemBody-list {
     width: 100%;
-    margin-top: 0;
     text-align: left;
     padding-left: 10px;
   }
@@ -1356,7 +1352,7 @@ a.navbar-brand {
   height: 100%;
 }
 .contact .php-email-form .error-message {
-  display: none;
+  display: block;
   color: #fff;
   background: #ed3c0d;
   text-align: left;
@@ -1557,7 +1553,7 @@ footer a {
   margin: 40px 30px;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
   background: #fff;
-  min-height: 320px;
+  /*min-height: 320px; */
   display: flex;
   flex-direction: column;
   text-align: center;
