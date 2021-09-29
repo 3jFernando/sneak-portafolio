@@ -57,6 +57,7 @@ function Contact(props) {
         <header className="section-header">
           <h2>Contactanos</h2>
         </header>
+          <p className="text-center">Comunícate con nosotros para mayor información sobre nuestros productos y servicios</p>
         <div className="row gy-4">
           <div className="col-lg-6">
             <div className="row gy-4">

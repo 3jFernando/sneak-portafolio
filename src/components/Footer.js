@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+const links = require("../utils/LINKS.json");
+
 function Footer() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -65,56 +67,29 @@ function Footer() {
             </div>
             <div className="col-lg-2 col-6 footer-links">
               <h4>Links Accesos</h4>
-              <ul>
-                <li>
-                  <i className="fa fa-chevron-right" /> <a href="/#">Inicio</a>
-                </li>
-                <li>
-                  <i className="fa fa-chevron-right" />{" "}
-                  <a href="#bussines">Nuestros valores</a>
-                </li>
-                <li>
-                  <i className="fa fa-chevron-right" />{" "}
-                  <a href="#pricing">Servicios</a>
-                </li>
-                <li>
-                  <i className="fa fa-chevron-right" />
-                  <a href="/#">Términos de servicio</a>
-                </li>
-                <li>
-                  <i className="fa fa-chevron-right" />
-                  <a href="/#">Política de privacidad</a>
-                </li>
-              </ul>
+              {links.map((item, id) => (
+                <ul key={id}>
+                  {item.access.map((item, idAccess) => (
+                    <li key={idAccess}>
+                      <i className="fa fa-chevron-right" />{" "}
+                      <a href={item.link}>{item.name}</a>
+                    </li>
+                  ))}
+                </ul>
+              ))}
             </div>
             <div className="col-lg-2 col-6 footer-links">
               <h4>Nuestros servicios</h4>
-              <ul>
-                <li>
-                  <i className="fa fa-chevron-right" />
-                  <a href="/#">Desarrollo de software</a>
-                </li>
-                <li>
-                  <i className="fa fa-chevron-right" />
-                  <a href="/#">Tiendas virtuales</a>
-                </li>
-                <li>
-                  <i className="fa fa-chevron-right" />
-                  <a href="/#">Páginas web</a>
-                </li>
-                <li>
-                  <i className="fa fa-chevron-right" />
-                  <a href="/#">Plataformas web y de escritorio</a>
-                </li>
-                <li>
-                  <i className="fa fa-chevron-right" />
-                  <a href="/#">Apps móviles</a>
-                </li>
-                <li>
-                  <i className="fa fa-chevron-right" />
-                  <a href="/#">Diseño UX/UI</a>
-                </li>
-              </ul>
+              {links.map((item, id) => (
+                <ul key={id}>
+                  {item.services.map((item, idServices) => (
+                    <li key={idServices}>
+                      <i className="fa fa-chevron-right" />{" "}
+                      <a href={item.link}>{item.name}</a>
+                    </li>
+                  ))}
+                </ul>
+              ))}
             </div>
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
               <h4>Ubicación </h4>
@@ -128,7 +103,11 @@ function Footer() {
                 </a>
                 <br />
                 <strong>Email: </strong>
-                <a target="_blank" rel="noreferrer" href="mailto:contacto@claros-soluciones.com">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="mailto:contacto@claros-soluciones.com"
+                >
                   contacto@claros-soluciones.com
                 </a>
                 <br />

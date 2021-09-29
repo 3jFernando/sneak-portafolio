@@ -1,0 +1,52 @@
+[
+    {
+      "access": [
+            {
+                "name": "Inicio",
+                "link": "/#"
+            },
+            {
+                "name": "Nuestros valores",
+                "link": "#bussines"
+            },
+            {
+                "name": "Servicios",
+                "link": "#pricing"
+            },
+            {
+                "name": "Términos de servicio",
+                "link": "/#"
+            },
+            {
+                "name": "Política de privacidad",
+                "link": "/#"
+            }
+        ],
+        "services": [
+            {
+                "name": "Desarrollo de software",
+                "link": "/#"
+            },
+            {
+                "name": "Tiendas virtuales",
+                "link": "/#"
+            },
+            {
+                "name": "Páginas web",
+                "link": "/#"
+            },
+            {
+                "name": "Plataformas web y de escritorio",
+                "link": "/#"
+            },
+            {
+                "name": "Apps móviles",
+                "link": "/#"
+            },
+            {
+                "name": "Diseño UX/UI",
+                "link": "/#"
+            }
+        ]
+    }
+]
