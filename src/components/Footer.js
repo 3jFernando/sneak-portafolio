@@ -4,6 +4,7 @@ const links = require("../utils/LINKS.json");
 
 function Footer() {
   const [isVisible, setIsVisible] = useState(false);
+  let newDate = new Date(), year = newDate.getFullYear();
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
@@ -122,7 +123,7 @@ function Footer() {
           <strong>
             <span>CLAROS SOLUCIONES </span>
           </strong>{" "}
-          2021
+          { year }
         </div>
         <div className="credits">Todos los derechos reservados.</div>
       </div>
