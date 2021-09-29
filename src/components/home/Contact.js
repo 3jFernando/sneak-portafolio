@@ -1,26 +1,27 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
-
 function Contact(props) {
   const form = useRef();
   const [sentMessage, setSentMessage] = useState(false);
+  const [sendingForm, setsendingForm] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setsendingForm(true);
 
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE,
         process.env.REACT_APP_EMAILJS_TEMPLATE,
         form.current,
-        process.env.REACT_APP_EMAILJS_USER,
+        process.env.REACT_APP_EMAILJS_USER
       )
       .then(
-        (result ) => {
+        (result) => {
           console.log(result.text);
-            e.target.reset();
-            setSentMessage(true);
+          e.target.reset();
+          setSentMessage(true);
         },
         (error) => {
           console.log(error.text);
@@ -32,7 +33,7 @@ function Contact(props) {
     {
       icon: "fa fa-map-marker",
       title: "Dirección",
-      subtitle: "Calle 20A N1D - 42",
+      subtitle: "Calle 20A N1D - 42  Pitalito, Huila Colombia",
     },
     {
       icon: "fa fa-phone",
@@ -114,15 +115,21 @@ function Contact(props) {
                   />
                 </div>
                 <div className="col-md-12 text-center">
-                  <div className="loading">Loading</div>
-                  <div className="error-message">Error al enviar el mensaje. Vuelve a intentarlo más tarde.</div>
-                  {sentMessage &&
+                  <div className="error-message">
+                    Error al enviar el mensaje. Vuelve a intentarlo más tarde.
+                  </div>
+                  {sentMessage ? (
                     <div className="sent-message">
                       Tu mensaje ha sido enviado. ¡Gracias!
                     </div>
-                  }
+                  ) : (
+                    sendingForm && <div className="loading">Loading</div>
+                  )}
                   <div className="pb-2 fst-italic">
-                    <p style={{ fontSize: 12 }}>* Al enviar este formulario aceptas nuestras Políticas de privacidad</p>
+                    <p style={{ fontSize: 12 }}>
+                      * Al enviar este formulario aceptas nuestras Políticas de
+                      privacidad
+                    </p>
                   </div>
                   <button type="submit">Enviar mensaje</button>
                 </div>
