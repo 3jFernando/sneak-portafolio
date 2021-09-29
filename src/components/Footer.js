@@ -123,12 +123,12 @@ function Footer() {
                 Pitalito, Huila - Colombia <br />
                 <br />
                 <strong>Teléfono: </strong>
-                <a target="_blank" href="tel:3222822111">
+                <a target="_blank" rel="noreferrer" href="tel:3222822111">
                   +57 (322) 282-2211
                 </a>
                 <br />
                 <strong>Email: </strong>
-                <a target="_blank" href="mailto:contacto@claros-soluciones.com">
+                <a target="_blank" rel="noreferrer" href="mailto:contacto@claros-soluciones.com">
                   contacto@claros-soluciones.com
                 </a>
                 <br />
@@ -149,7 +149,8 @@ function Footer() {
       </div>
       {isVisible && (
         <a
-          href="#"
+          href="/#"
+          rel="noreferrer"
           className="back-to-top d-flex align-items-center justify-content-center active"
           onClick={scrollToTop}
         >

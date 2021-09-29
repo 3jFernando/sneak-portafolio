@@ -12,7 +12,7 @@ function MenuNew() {
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <img className="navbar-logo-brand" src={LOGO}></img>
+          <img className="navbar-logo-brand" alt="Logo CLAROS SOLUCIONES" src={LOGO}></img>
           <span>CLAROS SOLUCIONES</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
