@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "client": "SUMINISTROS Y SERVICIOS",
+        "description": "ALTERNATIVOS S.A.S",
+        "image": "assets/clients/sualternativasas.png",
+        "testimony": ""
+    },
+    {
+        "id": 1,
+        "client": "NaranjaERP S.A.S.",
+        "description": "Nuevo Cliente",
+        "image": "assets/clients/naranjaerp.png",
+        "testimony": ""
+    },
+    {
+        "id": 2,
+        "client": "MCS Consultoria",
+        "description": "Facturación Electronica",
+        "image": "assets/clients/mcs.png",
+        "testimony": ""
+    },
+    {
+        "id": 3,
+        "client": "K&F Motos",
+        "description": "",
+        "image": "assets/clients/kyf-motos.jpg",
+        "testimony": ""
+    },
+    {
+        "id": 4,
+        "client": "Ingeniero Freddy",
+        "description": "",
+        "image": "assets/clients/cliente1.jpeg",
+        "testimony": ""
+    }
+]

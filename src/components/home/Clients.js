@@ -1,44 +1,57 @@
-import React from 'react';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import "swiper/swiper-bundle.css";
+
+//api
+const ApiClients = require("../../utils/CLIENTS.json");
+
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 function Clients(props) {
-    return (
-        <div className="Clients body-space">
-            <h2>NUESTROS CLIENTES</h2>
-            <br />
-            <div className="ClientsContent">
-                <div className="ClientItem">
-                    <img src="assets/clients/sualternativasas.png" alt="SUMINISTROS Y SERVICIOS ALTERNATIVOS S.A.S." />
-                    <br />
-                    <strong>SUMINISTROS Y SERVICIOS
-                        <br></br>
-                        ALTERNATIVOS S.A.S.</strong>
-                </div>
-                <div className="ClientItem">
-                    <img src="assets/clients/naranjaerp.png" alt="naranjaerp" />
-                    <br />
-                    <br />
-                    <strong>NaranjaERP S.A.S.</strong>
-                </div>
-                <div className="ClientItem">
-                    <img src="assets/clients/mcs.png" alt="msc" />
-                    <br />
-                    <strong>MCS Consultoria <br />Facturación Electronica <br />DIAN</strong>
-                </div>
-                <div className="ClientItem">
-                    <img src="assets/clients/kyf-motos.jpg" alt="kyf-motos" />
-                    <br />
-                    <br />
-                    <strong>K&F Motos</strong>
-                </div>
-                <div className="ClientItem">
-                    <img src="assets/clients/cliente1.jpeg" alt="Fredy" />
-                    <br />
-                    <br />
-                    <strong>Ingeniero Freddy</strong>
-                </div>
+  return (
+    <div id="clients" className="Clients body-space">
+      <h2>NUESTROS CLIENTES</h2>
+      <br />
+      <Swiper
+        navigation={false}
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+          "dynamicBullets": true
+        }}
+        className="mySwiper"
+      >
+        {ApiClients.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="testimonial-item d-flex align-items-stretch">
+              <div className="stars">
+                <i className="fa fa-star" />
+                <i className="fa fa-star" />
+                <i className="fa fa-star" />
+                <i className="fa fa-star" />
+                <i className="fa fa-star" />
+              </div>
+              <div className="profile">
+                <img src={item.image} className="testimonial-img" alt="true" />
+                <h3>{item.client}</h3>
+                <h4>{item.description}</h4>
+                <br />
+                <p>{item.testimony}</p>
+              </div>
             </div>
-        </div >
-    )
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 }
 
 export default Clients;

@@ -1,4 +1,5 @@
 import React from 'react';
+import ModalImage from "react-modal-image";
 
 // componentes
 import MenuNav from '../menus/MenuWeb'
@@ -17,28 +18,30 @@ function Content(props) {
                     <div className="ContactItem ContactItem1">
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="mailto:contacto@claros-soluciones.com"
                         ><i className="fa fa-envelope"></i> contacto@claros-soluciones.com</a>
                     </div>
                     <div className="ContactItem ContactItem2">
                         <a
                             target="_blank"
-                            href="callto:(315)670-5317"
-                        ><i className="fa fa-phone"></i>+57 (315) 670-5317</a>
+                            rel="noreferrer"
+                            href="tel:3222822111"
+                        ><i className="fa fa-phone"></i>+57 (322) 322-2111</a>
                     </div>
                     <div className="ContactItem ContactItem3">
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://api.whatsapp.com/send/?phone=%2B573222822111&text=Hola+CLAROS+SOLUCIONES+me+interesan+tus+servicios."
                         ><i className="fa fa-whatsapp"></i>Whatsapp</a>
                     </div>
                 </div>
             </div>
 
-            <div className="body-space">
-                <h2>NUESTRO PORFTAFOLIO</h2>
+            <div className="body-space" id="portfolio">
+                <h2>NUESTRO PORTAFOLIO</h2>
                 <br />
-
                 <div className="ContentOrder">
                     <span className="material-icons" onClick={() => props.changeViewItems('GRID')}>grid_view</span>
                     <span className="material-icons" onClick={() => props.changeViewItems('LIST')}>view_agenda</span>
@@ -49,12 +52,17 @@ function Content(props) {
 
                 {
                     props.ApiItems.length > 0 ? (
-                        <div className={props.viewBy == 'GRID' ? `ContentBody` : 'ContentBody-list'}>
+                        <div className={props.viewBy === 'GRID' ? `ContentBody` : 'ContentBody-list'}>
 
                             {props.ApiItems.map((item, key) => (
-                                <div key={key} className={props.viewBy == 'GRID' ? `ContentBodyBox ${key} ContentBodyItem` : 'ContentBodyItem-list'} key={key}>
-                                    <img src={item.image}></img>
-                                    <div className={props.viewBy == 'GRID' ? 'ContentBodyBoxItem' : 'ContentBodyItemBody-list'}>
+                                <div key={key} className={props.viewBy === 'GRID' ? `ContentBodyBox ${key} ContentBodyItem` : 'ContentBodyItem-list'}>
+                                    <ModalImage
+                                        small={item.image}
+                                        large={item.image}
+                                        hideDownload={true}
+                                        hideZoom={true}
+                                    />
+                                    <div className={props.viewBy === 'GRID' ? 'ContentBodyBoxItem' : 'ContentBodyItemBody-list'}>
                                         <div>
                                             <strong>{item.title}</strong>
                                             <hr />
@@ -64,6 +72,7 @@ function Content(props) {
                                 </div>
                             ))}
                         </div>
+
                     ) : (
                         <div className="ContentBodyItemNoContent">
                             No hay resultados para mostrar...
