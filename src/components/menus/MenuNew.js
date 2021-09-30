@@ -11,7 +11,7 @@ function MenuNew() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="./">
           <img className="navbar-logo-brand" alt="Logo CLAROS SOLUCIONES" src={LOGO}></img>
           <span>CLAROS SOLUCIONES</span>
         </Navbar.Brand>
