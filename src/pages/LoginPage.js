@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function LoginPage(props) {
   return (
@@ -7,6 +8,7 @@ export default function LoginPage(props) {
         <div className="row justify-content-center">
           <div className="col-md-6 col-lg-4">
             <div className="login-wrap py-5">
+            <Link to="/"><i className="fa fa-arrow-circle-left" aria-hidden="true"></i></Link>
               <div
                 className="img d-flex align-items-center justify-content-center"
                 style={{ backgroundImage: "url(logoNew.png)" }}
@@ -37,7 +39,7 @@ export default function LoginPage(props) {
                 </div>
                 <div className="input-group d-md-flex mb-3">
                   <div className="w-100 text-md-right">
-                    <a className="text-decoration-none" href="#">
+                    <a className="text-decoration-none" href="/#">
                       Has olvidado tu contraseña?
                     </a>
                   </div>

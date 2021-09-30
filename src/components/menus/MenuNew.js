@@ -4,6 +4,7 @@ import {
   Container,
   Nav
 } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const LOGO = "/assets/logo/LogoTransparentNew.png";
 
@@ -23,6 +24,7 @@ function MenuNew() {
             <Nav.Link href="#portfolio">Portafolio</Nav.Link>
             <Nav.Link href="#pricing">Servicios</Nav.Link>
             <Nav.Link href="#clients">Clientes</Nav.Link>
+            <Link to="/login" className="nav-link">Ingresar</Link>
             <Nav.Link href="https://api.whatsapp.com/send/?phone=%2B573222822111&amp;text=Hola+CLAROS+SOLUCIONES+me+interesan+tus+servicios.">
               <button
                 className="text-decoration-none getstarted scrollto"

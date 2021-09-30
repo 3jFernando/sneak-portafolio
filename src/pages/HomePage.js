@@ -16,8 +16,6 @@ export default function HomePage(props) {
   const [active, setActive] = useState(1); // menu activa 1: All, etc
   const [viewBy, setViewBy] = useState("GRID"); // grid || list
   const [items, setItems] = useState(ApiItems); // JSON -> items
-  const [stateMenuMobil, setStateMenuMobil] = useState(false); // Estado de menu movil, abierto/cerrado
-  const [search, setSearch] = useState(false); // Estado de menu movil, abierto/cerrado
 
   const links = [
     {
@@ -56,7 +54,6 @@ export default function HomePage(props) {
     });
 
     setItems(newItems);
-    openMenuMobil(false);
   };
 
   /**
@@ -66,19 +63,6 @@ export default function HomePage(props) {
     setViewBy(view);
   };
 
-  /**
-   * Abrir menu movil
-   */
-  const openMenuMobil = (status) => {
-    setStateMenuMobil(status);
-  };
-
-  /**
-   * Abrir buscador
-   */
-  const searchView = (action) => {
-    setSearch(action);
-  };
 
   return (
     <div>
@@ -91,8 +75,6 @@ export default function HomePage(props) {
       <Bussines></Bussines>
       <Content
         activeMenuTab={true}
-        search={search}
-        searchView={searchView}
         links={links}
         activeMenu={activeMenu}
         active={active}
